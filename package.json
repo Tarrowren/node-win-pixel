@@ -1,0 +1,26 @@
+{
+    "name": "node-win-pixel",
+    "version": "1.0.0",
+    "description": "node win pixel",
+    "main": "out/index.js",
+    "scripts": {
+        "rebuild": "node-gyp rebuild"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Tarrowren/node-win-pixel.git"
+    },
+    "author": "Tarrowren",
+    "license": "ISC",
+    "gypfile": true,
+    "bugs": {
+        "url": "https://github.com/Tarrowren/node-win-pixel/issues"
+    },
+    "homepage": "https://github.com/Tarrowren/node-win-pixel#readme",
+    "devDependencies": {
+        "@types/node": "^13.7.7",
+        "node-addon-api": "^2.0.0",
+        "tslint": "^6.0.0",
+        "typescript": "^3.8.3"
+    }
+}
