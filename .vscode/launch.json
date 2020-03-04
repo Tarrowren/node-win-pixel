@@ -18,8 +18,7 @@
                 "${workspaceFolder}/test"
             ],
             "internalConsoleOptions": "openOnSessionStart",
-            "skipFiles": ["<node_internals>/**"],
-            "preLaunchTask": "${defaultBuildTask}"
+            "skipFiles": ["<node_internals>/**"]
         }
     ]
 }

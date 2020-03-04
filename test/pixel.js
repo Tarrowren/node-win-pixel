@@ -1,5 +1,5 @@
 const assert = require("chai").assert;
-const { Pixel } = require("../out");
+const { Pixel } = require("..");
 
 describe("node-win-pixel", function() {
     let pixel;
