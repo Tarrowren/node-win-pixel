@@ -1,12 +1,9 @@
 #include <napi.h>
-// #include <WinUser.h>
+#include "pixel.h"
 
-using namespace Napi;
-
-Object InitAll(Env env, Object exports)
+Napi::Object InitAll(Napi::Env env, Napi::Object exports)
 {
-    exports.Set("asd", 332);
-    return exports;
+    return Pixel::Init(env, exports);
 }
 
 NODE_API_MODULE(pixel, InitAll)

@@ -7,11 +7,19 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "启动程序",
+            "name": "Mocha Tests",
+            "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+            "args": [
+                "-u",
+                "bdd",
+                "--timeout",
+                "999999",
+                "--colors",
+                "${workspaceFolder}/test"
+            ],
+            "internalConsoleOptions": "openOnSessionStart",
             "skipFiles": ["<node_internals>/**"],
-            "program": "${workspaceFolder}\\out\\index.js",
-            "preLaunchTask": "${defaultBuildTask}",
-            "outFiles": ["${workspaceFolder}/out/**/*.js"]
+            "preLaunchTask": "${defaultBuildTask}"
         }
     ]
 }

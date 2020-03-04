@@ -1,3 +1,13 @@
-const nodeWinPixel = require("../build/Release/node-win-pixel.node");
+const addon = require("../build/Release/node-win-pixel.node");
 
-console.log(nodeWinPixel);
+export type RGB = {
+    r: number;
+    g: number;
+    b: number;
+};
+
+export class Pixel extends addon.Pixel {
+    getPixel(x: number, y: number): RGB {
+        return super.getPixel(x, y);
+    }
+}
