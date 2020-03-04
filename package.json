@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "node win pixel",
     "main": "index.js",
-    "types": "node-win-pixel.d.ts",
+    "types": "index.d.ts",
     "scripts": {
         "install": "node-gyp rebuild",
         "test": "mocha"
