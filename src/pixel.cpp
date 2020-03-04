@@ -32,6 +32,12 @@ Napi::Value Pixel::GetPixelEx(const Napi::CallbackInfo &info)
 {
     auto env = info.Env();
 
+    if (info.Length() != 2)
+    {
+        Napi::Error::New(env, "the wrong number of arguments").ThrowAsJavaScriptException();
+        return env.Undefined();
+    }
+
     if (!info[0].IsNumber() || !info[1].IsNumber())
     {
         Napi::TypeError::New(env, "the wrong type of argument").ThrowAsJavaScriptException();
@@ -45,7 +51,6 @@ Napi::Value Pixel::GetPixelEx(const Napi::CallbackInfo &info)
     if (pixel == CLR_INVALID)
     {
         Napi::Error::New(env, "invalid value").ThrowAsJavaScriptException();
-
         return env.Undefined();
     }
     else
