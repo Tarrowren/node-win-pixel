@@ -1,6 +1,6 @@
 {
     "name": "node-win-pixel",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "node win pixel",
     "main": "index.js",
     "types": "node-win-pixel.d.ts",
