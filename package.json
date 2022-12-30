@@ -21,7 +21,7 @@
     "homepage": "https://github.com/Tarrowren/node-win-pixel#readme",
     "devDependencies": {
         "chai": "^4.2.0",
-        "mocha": "^7.1.0"
+        "mocha": "^10.2.0"
     },
     "dependencies": {
         "node-addon-api": "^2.0.0"
